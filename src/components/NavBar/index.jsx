@@ -3,6 +3,9 @@ import React from 'react';
 // Image
 import logo from '../../assets/img/logo_nav.png';
 
+// Icons
+import { FaBars } from 'react-icons/fa';
+
 // Scroll
 import { Link } from 'react-scroll';
 
@@ -19,12 +22,14 @@ import './styles.css';
 */
 const NavBar = () => {
     return (
-        <Container fluid>
-            <Navbar fixed="top" className="top-navbar" expand="lg">
-                <Navbar.Brand href="/" className="p-0">
+        <Navbar fixed="top" className="top-navbar" expand="lg">
+            <Container>
+                <Navbar.Brand href="/">
                     <img src={logo} alt="Modelo de Site" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav">
+                    <FaBars />
+                </Navbar.Toggle>
 
                 <Navbar.Collapse
                     id="responsive-navbar-nav"
@@ -92,8 +97,8 @@ const NavBar = () => {
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
-        </Container>
+            </Container>
+        </Navbar>
     );
 };
 

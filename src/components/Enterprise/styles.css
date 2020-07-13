@@ -6,10 +6,6 @@
     padding: 80px 0 !important;
 }
 
-.enterprise-container .col{
-    padding: 0 2px;
-}
-
 .enterprise-info-title{
     border-bottom: 1px solid var(--primary-darkened);
     padding-bottom: 18px;

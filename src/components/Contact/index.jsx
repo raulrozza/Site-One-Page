@@ -27,42 +27,32 @@ const Contact = () => {
                 <h2>Entre em Contato</h2>
             </div>
             <Container>
-                <Row>
+                <Row noGutters>
                     <Col sm="6" md={{ offset: 1, span: 5 }}>
                         <Form>
-                            <Form.Row>
-                                <Col sm="6">
+                            <Row noGutters>
+                                <Col md="6">
                                     <Form.Group>
                                         <Form.Control placeholder="Nome" />
                                     </Form.Group>
                                 </Col>
-                                <Col sm="6">
+                                <Col md="6">
                                     <Form.Group>
                                         <Form.Control placeholder="Email" />
                                     </Form.Group>
                                 </Col>
-                            </Form.Row>
-                            <Form.Row>
-                                <Col>
-                                    <Form.Group>
-                                        <Form.Control placeholder="Assunto" />
-                                    </Form.Group>
-                                </Col>
-                            </Form.Row>
-                            <Form.Row>
-                                <Col>
-                                    <Form.Group>
-                                        <Form.Control
-                                            as="textarea"
-                                            rows="8"
-                                            placeholder="Mensagem"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                            </Form.Row>
-                            <Form.Row>
-                                <Button>Enviar</Button>
-                            </Form.Row>
+                            </Row>
+                            <Form.Group>
+                                <Form.Control placeholder="Assunto" />
+                            </Form.Group>
+                            <Form.Group>
+                                <Form.Control
+                                    as="textarea"
+                                    rows="8"
+                                    placeholder="Mensagem"
+                                />
+                            </Form.Group>
+                            <Button>Enviar</Button>
                         </Form>
                     </Col>
                     {/* Contact info */}

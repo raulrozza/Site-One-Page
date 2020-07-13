@@ -36,10 +36,10 @@ const Enterprise = () => {
                 <h2>A Empresa</h2>
             </div>
             <Container className="enterprise-container">
-                <Row>
+                <Row noGutters>
                     {/* List information from json  */}
                     {information.map(item => (
-                        <Col key={`item-${item.title}`} sm={12}>
+                        <Col key={`item-${item.title}`} md={4} sm={12}>
                             <div className="enterprise-info-title">
                                 <h2>{item.title}</h2>
                             </div>
