@@ -1,0 +1,42 @@
+.enterprise-section{
+    background:  #f9fbfd;
+}
+
+.enterprise-container{
+    padding: 80px 0 !important;
+}
+
+.enterprise-container .col{
+    padding: 0 2px;
+}
+
+.enterprise-info-title{
+    border-bottom: 1px solid var(--primary-darkened);
+    padding-bottom: 18px;
+}
+
+.enterprise-info-title h2{
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.enterprise-info-content{
+    padding-top: 30px;
+}
+
+.enterprise-info-content p{
+    color: var(--body-color);
+    max-width: 335px;
+}
+
+@media (max-width: 576px){
+    .enterprise-section{
+        text-align: center;
+    }
+
+    .enterprise-info-content p{
+        margin-bottom: 16px;
+    }
+}

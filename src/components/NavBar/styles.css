@@ -1,0 +1,19 @@
+.top-navbar{
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+    background-color: #fff;
+}
+
+.nav-link{
+    color: var(--primary-darkened) !important;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+    cursor: pointer;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+.nav-link:focus, .nav-link:hover, .nav-link .active{
+    color: var(--secondary) !important;
+}
